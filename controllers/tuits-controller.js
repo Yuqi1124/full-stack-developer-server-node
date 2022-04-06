@@ -8,6 +8,7 @@ const createTuit = (req, res) => {
     newTuit.likes = 0;
     newTuit.comments = 0;
     newTuit.retuits = 0;
+    newTuit["avatar-image"] = "./tuiter/nasa.png";
     tuits.push(newTuit);
     res.json(newTuit);
 }
